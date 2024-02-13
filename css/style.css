@@ -32,7 +32,7 @@ body {
   margin: 0;
   padding: 1em;
   font-size: 87.5%;
-  line-height: 1.5em;
+  line-height: 1;
 }
 
 h1 {
@@ -147,21 +147,38 @@ a.button:hover {
   border-bottom: 0.05em solid rgba(0, 0, 0, .2);
 }
 
+@media (min-width: 768px) {
+  .site-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    align-items: center;
+  }
+
+  .site-navigation ul {
+    padding: 0;
+  }
+}
+
 section {
   padding: 0 0 3em 0;
 }
 
 .hero {
-  padding: 4em 0;
-  background: #dedede;
+  padding: 20em 0;
   margin-bottom: 6em;
+  /* min-height: 80vh; */
+  text-align: center;
+  display: grid;
+  place-items: center;
 }
+
+@media (max width: 767px) {}
 
 .container {
   margin: 0 auto;
   max-width: 1000px;
 }
-
 
 /* FLEX GRID */
 
