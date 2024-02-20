@@ -302,7 +302,7 @@ fade-in {
   border-radius: 1em;
   overflow: hidden;
   position: relative;
-  height: 370px;
+  height: 350px;
 }
 
 .expandable-cards details[open] {
