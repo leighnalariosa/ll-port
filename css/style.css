@@ -68,8 +68,8 @@ a:hover {
   font-weight: normal;
 }
 
-.full-width {
-  width: 100vw;
+/* .full-width {
+  width: 100;
   position: relative;
   left: 50%;
   right: 50%;
@@ -79,7 +79,7 @@ a:hover {
 
 .full-width img {
   width: 100%;
-}
+} */
 
 /* #IMAGES */
 img {
@@ -173,32 +173,14 @@ section {
   place-items: center;
 }
 
-@media (max width: 767px) {}
+@media (max-width: 767px) {}
 
 .container {
   margin: 0 auto;
   max-width: 1000px;
 }
 
-/* FLEX GRID */
 
-@media (min-width: 768px) {
-
-  .row {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 1em;
-  }
-
-  .one-third.column {
-    width: 32%;
-  }
-
-  .two-thirds.column {
-    width: 60%;
-  }
-
-}
 
 /* #THUMBGRID */
 .thumbgrid {
@@ -320,7 +302,7 @@ fade-in {
   border-radius: 1em;
   overflow: hidden;
   position: relative;
-  height: 200px;
+  height: 370px;
 }
 
 .expandable-cards details[open] {
@@ -335,6 +317,11 @@ fade-in {
   object-fit: cover;
   width: 100%;
   height: 100%;
+  transition: all .4s ease-out;
+}
+
+.expandable-cards .thumb-image:hover img {
+  scale: 1.1;
 }
 
 .expandable-cards .thumb-text {
@@ -385,8 +372,32 @@ video {
   height: 100%;
 }
 
+/* FLEX GRID */
+
+/* @media (min-width: 768px) {
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+  }
+
+  .one-third.column {
+    width: 32%;
+  }
+
+  .two-thirds.column {
+    width: 60%;
+  }
+
+} */
 
 /* SEMANTIC GRID */
+section,
+.container {
+  overflow-x: hidden;
+}
+
 .row {
   display: flex;
   flex-wrap: wrap;
