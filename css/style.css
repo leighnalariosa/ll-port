@@ -165,7 +165,7 @@ section {
 }
 
 .hero {
-  padding: 20em 0;
+  padding: 5em 0;
   margin-bottom: 6em;
   /* min-height: 80vh; */
   text-align: center;
@@ -180,6 +180,9 @@ section {
   max-width: 1000px;
 }
 
+.container.wide {
+  max-width: 1200px;
+}
 
 
 /* #THUMBGRID */
@@ -361,6 +364,10 @@ video {
   /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
 }
 
+.video-iframe.ratio-2-1 {
+  padding-top: 200%;
+}
+
 /* Then style the iframe to fit in the container div with full height and width */
 .responsive-iframe {
   position: absolute;
@@ -470,6 +477,10 @@ section,
 
   .row .three-fourths {
     width: 71%;
+  }
+
+  .row .one-sixth {
+    width: 12.6666%;
   }
 
   .row .push-one-fourth {
