@@ -45,7 +45,10 @@ h2 {
 h3 {
   font-size: 1.5em;
 }
-
+p {
+  line-height: 1.5;
+  font-size: 1em;
+}
 .section-title {
   font-size: 3em;
 }
@@ -299,7 +302,7 @@ fade-in {
 }
 
 /* CARD SYSTEM  */
-.card-container {}
+/* .card-container {} */
 
 .expandable-cards {
   display: flex;
@@ -598,8 +601,189 @@ figcaption {
   background-color: #efefef;
 } */
 
-img {
+/* img {
   box-shadow: 0 0 10px 0 rgb(0 0 0 / .2);
   padding: 1em;
   border-radius: 1em;
+} */
+
+/* -------STYLE TILES -------- */
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.poppins-h1, .shippori-antique-h1, .prata-regular-h1 {
+  font-size: 40px;
+}
+
+.poppins-h2, .shippori-antique-regular-h2, .prata-regular-h2 {
+  font-size: 32px;
+  display: block;
+}
+.poppins-subhead, .poppins-reg {
+  font-size: 16px;
+}
+
+.shippori-antique-regular {
+  font-family: "Shippori Antique", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.shippori-antique b1-regular {
+  font-family: "Shippori Antique B1", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.public-sans-bold {
+  font-family: "Public Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.public-sans-reg {
+  font-family: "Public Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.prata-regular {
+  font-family: "Prata", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.dots {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.dot1 {
+  background-color: #72B540;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+.dot2 {
+  background-color: #114521;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+.dot3 {
+  background-color: #FFC037;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+.dot4 {
+  background-color: #FFE74E;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.dot2 p, .dot3 p, .dot4 p {
+padding-top: 3.5em;
+}
+
+.dot1 p, .dot5 p, .dot6 p, .dot7 p, .dot8 p {
+  padding-top: 7em;
+  text-align: center;
+}
+
+.dot5 {
+  background-color: #B1DDF1;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.dot6 {
+  background-color: #9F87AF;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.btn-dk-gray {
+  padding: 1em;
+  color: white;
+  background-color: #444544;
+  text-align: center;
+  width: 100px;
+  /* border-radius: 1em; */
+}
+
+.btn-orange {
+  padding: 1em;
+  color: white;
+  background-color: #FFC037;
+  text-align: center;
+  width: 150px;
+  /* border-radius: 1em; */
+}
+
+.btn-sky-blue {
+  padding: 1em;
+  color: white;
+  background-color: #B1DDF1;
+  text-align: center;
+  width: 100px;
+  /* border-radius: 1em; */
+}
+
+.btn-lavendar {
+  padding: 1em;
+  color: white;
+  background-color: #9F87AF;
+  text-align: center;
+  width: 150px;
+  /* border-radius: 1em; */
+}
+
+.dot7 {
+  background-color: #11270B;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.dot8 {
+  background-color: #71B340;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.btn-dk-grey {
+  padding: 1em;
+  color: white;
+  background-color: #11270B;
+  text-align: center;
+  width: 100px;
+  /* border-radius: 1em; */
+}
+
+.btn-green {
+  padding: 1em;
+  color: white;
+  background-color: #71B340;
+  text-align: center;
+  width: 150px;
+  /* border-radius: 1em; */
 }
