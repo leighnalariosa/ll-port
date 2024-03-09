@@ -391,9 +391,9 @@ video {
   /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
 }
 
-/* .video-iframe.ratio-2-1 {
-  padding-top: 200%;
-} */
+.video-iframe.ratio-2-1 {
+  padding-top: 30%;
+}
 
 /* Then style the iframe to fit in the container div with full height and width */
 .responsive-iframe {
@@ -512,7 +512,7 @@ section,
 
   .row .col-4 {
     width: 29.333%;
-    
+
   }
   .row .col-5 {
     width: 37.666%;
