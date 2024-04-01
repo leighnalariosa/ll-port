@@ -31,24 +31,26 @@ body {
   margin: 0;
   padding: 1em;
   font-size: 87.5%;
-  line-height: 1;
+  line-height: 1.5;
 }
 
 h1 {
   font-size: 3em;
   margin: 0;
+  line-height: 1;
 }
 
 h2 {
   font-size: 2.2em;
+  line-height: 1.1;
 }
 
 h3 {
   font-size: 1.5em;
+  line-height: 1.2;
 }
 
 p {
-  line-height: 1.5;
   font-size: 1em;
 }
 
@@ -218,7 +220,8 @@ section {
 .hero .image-wrapper-fullwidth {
   background-color: #c7c3ba;
   width: 100%;
-  height: 70svh;
+  height: 50svh;
+  overflow: hidden;
 }
 
 .hero .image-wrapper-fullwidth img {
@@ -421,7 +424,7 @@ video {
 }
 
 .video-iframe.ratio-2-1 {
-  padding-top: 30%;
+  padding-top: 3em;
 }
 
 /* Then style the iframe to fit in the container div with full height and width */
@@ -511,11 +514,13 @@ section,
     flex-grow: 0;
   }
 
-  .row .one-whole {
+  .row .one-whole,
+  .row .col-12 {
     width: 96%;
   }
 
-  .row .one-half {
+  .row .one-half,
+  .row .col-6 {
     width: 46%;
   }
 
