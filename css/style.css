@@ -31,7 +31,7 @@ body {
   font-weight: 400;
   color: rgba(0, 0, 0, .7);
   margin: 0;
-  padding: .5em;
+  padding: 1em 0 0 2em;
   font-size: 87.5%;
   line-height: 1.5;
 }
@@ -257,14 +257,14 @@ section {
 
 .image-wrapper-fullwidth-cover {
   width: 100%;
-  height: 80svh;
+  height: 95svh;
   overflow: hidden;
 }
 
 .image-wrapper-fullwidth-cover img {
   max-width: none;
   height: 100%;
-  width: 100%;
+  width: 98%;
   object-fit: cover;
 }
 
