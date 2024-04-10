@@ -593,9 +593,9 @@ section,
     width: 12.6666%;
   }
 
+
   .row .col-4 {
     width: 29.333%;
-
   }
 
   .row .col-5 {
@@ -935,4 +935,20 @@ figcaption {
 .swiper-button-prev,
 .swiper-button-next {
   color: gray;
+}
+
+/* TRAINGLE PELE */
+.svg-triangle path {
+  stroke-width: 5;
+  fill: rgb(197, 102, 0);
+}
+
+.svg-triangle {
+  width: 75px;
+  height: 30px;
+  margin: 0 auto;
+}
+
+.pele .row {
+  display: flex;
 }
