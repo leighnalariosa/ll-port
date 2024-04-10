@@ -24,6 +24,10 @@
   box-sizing: border-box;
 }
 
+html {
+  --site-margin: 2rem;
+}
+
 /* #TYPOGRAPHY  */
 body {
   font-family: "proxima-nova", Helvetica, Arial, sans-serif;
@@ -31,7 +35,7 @@ body {
   font-weight: 400;
   color: rgba(0, 0, 0, .7);
   margin: 0;
-  padding: 1em 0 0 2em;
+  padding: 0;
   font-size: 87.5%;
   line-height: 1.5;
 }
@@ -166,7 +170,7 @@ a.button:hover {
 .site-header,
 .site-footer {
   text-align: center;
-  padding: 3em 0 2em 0;
+  padding: 3em var(--site-margin) 2em var(--site-margin);
   text-transform: uppercase;
   letter-spacing: 0.15em;
 }
@@ -174,7 +178,7 @@ a.button:hover {
 .site-branding h1 {
   font-size: 2em;
   margin: 0;
-  padding: .5em;
+  padding: 0;
   font-weight: normal;
 }
 
@@ -205,7 +209,6 @@ a.button:hover {
   .site-header {
     display: flex;
     justify-content: space-between;
-    padding: 0;
     align-items: center;
   }
 
@@ -219,11 +222,15 @@ section {
 }
 
 .hero {
-  padding: 5em 0;
+  padding: 0;
   margin-bottom: 6em;
   text-align: center;
   display: grid;
   place-items: center;
+}
+
+.home .hero {
+  padding-top: 5em;
 }
 
 .hero .image-wrapper {
@@ -257,18 +264,22 @@ section {
 .image-wrapper-fullwidth-cover img {
   max-width: none;
   height: 100%;
-  width: 98%;
+  width: 100%;
   object-fit: cover;
 }
 
 .container {
   margin: 0 auto;
   max-width: 1000px;
-  padding: .5em;
+  padding: var(--site-margin);
 }
 
 .container.wide {
   max-width: 1200px;
+}
+
+.brainstorm .container {
+  text-align: right;
 }
 
 
@@ -903,4 +914,10 @@ figcaption {
 
 .p-bottom {
   padding: 0;
+}
+
+/* SWIPER */
+.swiper {
+  /*   width: 600px; */
+  min-height: 300px;
 }
