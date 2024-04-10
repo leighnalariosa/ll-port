@@ -16,6 +16,11 @@
     <!-- ADOBE FONTS -->
     <link rel="stylesheet" href="https://use.typekit.net/mwq8yta.css">
 
+    <!-- SWIPER JS CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <!-- MAIN CSS FILE -->
     <link href="css/style.css" rel="stylesheet" type="text/css" />
 
@@ -87,11 +92,13 @@
                         </p>
                     </div>
                 </div>
+
+
+                <div class="container hr_"></div>
+
+
             </div>
         </section>
-
-
-        <div class="container hr_"></div>
 
 
         <section>
@@ -117,9 +124,9 @@
         <div class="container hr_"></div>
 
 
-        <section>
+        <section class="brainstorm">
             <div class="container">
-                <div class="row">
+                <div class="row swapped">
                     <div class="col-6">
                         <h3 class="section-title">BRAINSTORM PROCESS</h3>
                         <p>These visuals offer a snapshot of my creative process, displaying various art boards
@@ -129,44 +136,34 @@
                     </div>
                 </div>
 
-                <div class="row">
-                    <div class="col-8">
-                        <div class="video-iframe">
-                            <video class="responsive-iframe" width="382" height="786" style="background-color: #fff;"
-                                src="img/hierrdrafts.mp4" autoplay muted loop playsinline preload></video>
-                        </div>
+
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+
+                        <div class="swiper-slide"><img src="img/logodraft1.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="img/logodraft2.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="img/logodraft3.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="img/logodraft4.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="img/logodraft5.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="img/logodraft6.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="img/logodraft7.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="img/logodraft8.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="img/logodraft9.jpg" alt=""></div>
+                        ...
                     </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
 
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
 
-                    <!-- Slider main container -->
-                    <div class="swiper">
-                        <!-- Additional required wrapper -->
-                        <div class="swiper-wrapper">
-                            <!-- Slides -->
-                            <div class="swiper-slide">
-                                <img src="https://source.unsplash.com/3tYZjGSBwbk" alt="unsplash" alt="">
-                            </div>
+                </div>
 
-                            <div class="swiper-slide">
-                                <img src="https://source.unsplash.com/3tYZjGSBwbk" alt="unsplash" alt="">
-                            </div>
-
-                            <div class="swiper-slide">
-                                <img src="https://source.unsplash.com/3tYZjGSBwbk" alt="unsplash" alt="">
-                            </div>
-
-                            <!-- If we need pagination -->
-                            <div class="swiper-pagination"></div>
-
-                            <div class="swiper-button-prev"></div>
-                            <div class="swiper-button-next"></div>
-
-                        </div>
-
-
-
-
-                    </div>
+            </div>
         </section>
 
 
@@ -259,6 +256,9 @@
         </nav>
 
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
 
 </body>
 

@@ -57,6 +57,11 @@ h1 {
   line-height: 1;
 }
 
+.font-italic {
+  font-weight: 700;
+  font-style: italic;
+}
+
 h2 {
   font-size: 3em;
   line-height: 1.1;
@@ -279,6 +284,10 @@ section {
 }
 
 .brainstorm .container {
+  text-align: right;
+}
+
+.iterations .container {
   text-align: right;
 }
 
@@ -918,6 +927,12 @@ figcaption {
 
 /* SWIPER */
 .swiper {
-  /*   width: 600px; */
-  min-height: 300px;
+  width: fit-contain;
+  height: 700px;
+}
+
+/* SWIPER ARROWS */
+.swiper-button-prev,
+.swiper-button-next {
+  color: gray;
 }
