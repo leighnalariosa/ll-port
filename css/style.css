@@ -938,22 +938,19 @@ figcaption {
 }
 
 /* TRAINGLE PELE */
-.svg-triangle path {
-  stroke-width: 5;
-  fill: rgb(197, 102, 0);
-}
-
-.svg-triangle {
-  width: 100px;
+.clip-triangle{
+  clip-path: polygon(50% 0, 100% 100%, 0 100%);
+  background-color: rgb(197, 102, 0);
+  width: 50px;
   height: 50px;
-  margin: 0 auto;
-  /* margin-right: 30px; */
+  /* border: 5px solid red; */
 }
 
-.pele .row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-content: center;
+.pele {
+  display: flex;
+  /* grid-template-columns: 1fr 1fr; */
+  justify-content: flex-start;
   align-items: center;
   color: rgb(197, 102, 0);
+  padding-bottom: 1em;
 }
