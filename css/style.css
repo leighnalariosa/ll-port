@@ -283,14 +283,9 @@ section {
   max-width: 1200px;
 }
 
-.brainstorm .container {
+.right-align .container {
   text-align: right;
 }
-
-.iterations .container {
-  text-align: right;
-}
-
 
 /* #THUMBGRID */
 .thumbgrid {
@@ -938,7 +933,7 @@ figcaption {
 }
 
 /* TRAINGLE PELE */
-.clip-triangle{
+.clip-triangle {
   clip-path: polygon(50% 0, 100% 100%, 0 100%);
   background-color: rgb(197, 102, 0);
   width: 50px;
