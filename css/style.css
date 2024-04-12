@@ -983,3 +983,8 @@ figcaption {
 .intro p {
   max-width: 35em;
 }
+
+/* DROP SHADOW */
+.custom-ill img {
+  box-shadow: 0px 5px 10px rgb(240, 240, 240);
+}
