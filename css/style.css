@@ -162,8 +162,8 @@ img.circular {
 /* BUTTONS */
 a.button {
   display: inline-block;
-  background-color: rgba(0, 0, 0, .3);
-  color: rgba(255, 255, 255, .8);
+  background-color: #a8a500;
+  color: rgba(255, 255, 255, 0.8);
   border-radius: .5em;
   padding: 1em 2em .8em 2em;
   margin: .5em;
@@ -173,16 +173,16 @@ a.button {
 }
 
 a.button:hover {
-  background-color: rgba(0, 0, 0, .5);
+  background-color: rgb(15, 67, 0);
 }
 
 /* SITE-STRUCTURE */
 
 .site-header,
 .site-footer {
+  font-family: "baskerville-urw", Helvetica, Arial, serif;
   text-align: center;
   padding: 3em var(--site-margin) 2em var(--site-margin);
-  text-transform: uppercase;
   letter-spacing: 0.15em;
 }
 
@@ -396,7 +396,9 @@ fade-in {
 }
 
 /* CARD SYSTEM  */
-/* .card-container {} */
+.card-container h4 {
+  font-family: "baskerville-urw", Helvetica, Arial, serif;
+}
 
 .expandable-cards {
   display: flex;
@@ -457,6 +459,7 @@ fade-in {
 .expandable-cards .thumb-text h3,
 .expandable-cards .thumb-text h4 {
   margin: 0;
+  font-weight: 500;
 }
 
 .expandable-cards .featured {
