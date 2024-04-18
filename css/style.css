@@ -1013,6 +1013,17 @@ figcaption {
   font-family: "baskerville-urw", Helvetica, Arial, serif;
 }
 
+/* ANIMATIONS */
+.scrolltrack.leftslide {
+  transform: translateX(-40px);
+  opacity: 0;
+  transition: 1s all ease-out;
+}
+
+.scrolltrack.leftslide[data-viewstate="inview"] {
+  transform: translateX(0);
+  opacity: 1;
+}
 
 
 
