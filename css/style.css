@@ -1051,17 +1051,17 @@ figcaption {
 }
 
 .outtie {
-  --ringoffset: 200;
+  --ringoffset: 220;
   stroke: #a2bb40;
 }
 
 .middie {
-  --ringoffset: 175;
+  --ringoffset: 150;
   stroke: #293400;
 }
 
 .innie {
-  --ringoffset: 100;
+  --ringoffset: 76;
   stroke: #576d00;
 }
 
