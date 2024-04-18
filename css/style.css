@@ -182,7 +182,7 @@ a.button:hover {
 .site-footer {
   font-family: "baskerville-urw", Helvetica, Arial, serif;
   text-align: center;
-  padding: 3em var(--site-margin) 2em var(--site-margin);
+  padding: 2em var(--site-margin) 2em var(--site-margin);
   letter-spacing: 0.15em;
 }
 
@@ -194,8 +194,9 @@ a.button:hover {
 }
 
 .site-navigation ul {
-  margin: 1;
-  padding: 2em 0;
+  margin: 0;
+  padding: 0;
+  font-size: 1.3em;
 }
 
 .site-navigation li {
@@ -1005,3 +1006,21 @@ figcaption {
 .custom-ill img {
   box-shadow: 0px 5px 10px rgb(240, 240, 240);
 }
+
+/* ABOUT PAGE STYLING */
+.page-about h2 {
+  padding-bottom: .5em;
+  font-family: "baskerville-urw", Helvetica, Arial, serif;
+}
+
+
+
+
+
+
+/*  FOR DEV DEMO TESTING ONLY */
+/* body * {
+  background-color: rgb(0 0 0 / .1);
+  border: 1px solid rgb(0 0 0 / .2);
+  color: rgb(0 0 0 / .5);
+} */
