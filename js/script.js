@@ -2,14 +2,14 @@
 const myobserver = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
-            entry.target.setAttribute("data-viewstate", "inview");
+            entry.target.setAttribute("data-inview", "");
         } else {
-            entry.target.setAttribute("data-viewstate", "notinview");
+            entry.target.removeAttribute("data-inview");
         }
     });
 });
 
 
-document.querySelectorAll(".scrolltrack").forEach((el) => {
+document.querySelectorAll("[data-scroll]").forEach((el) => {
     myobserver.observe(el);
 });

@@ -1014,18 +1014,78 @@ figcaption {
 }
 
 /* ANIMATIONS */
-.scrolltrack.leftslide {
-  transform: translateX(-40px);
-  opacity: 0;
+
+[data-scroll="leftslide"] {
+  --leftslide-x: -40px;
+  --leftslide-opacity: 0;
+  transform: translateX(var(--leftslide-x));
+  opacity: var(--leftslide-opacity);
   transition: 1s all ease-out;
 }
 
-.scrolltrack.leftslide[data-viewstate="inview"] {
-  transform: translateX(0);
-  opacity: 1;
+[data-scroll="leftslide"][data-inview] {
+  --leftslide-opacity: 1;
+  --leftslide-x: 0;
+}
+
+.rainbow-wrapper {
+  position: relative;
+  height: 100px;
+  width: 100px;
+  overflow: hidden;
+}
+
+.ring {
+  --ringoffset: 100;
+  fill: none;
+  stroke-width: 3.23px;
+  stroke-dasharray: var(--ringoffset);
+  stroke-dashoffset: var(--ringoffset);
+  animation: dash 3s linear forwards;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.outtie {
+  --ringoffset: 200;
+  stroke: #a2bb40;
+}
+
+.middie {
+  --ringoffset: 175;
+  stroke: #293400;
+}
+
+.innie {
+  --ringoffset: 100;
+  stroke: #576d00;
 }
 
 
+
+
+
+/* .rainbow-wrapper img {
+  display: block;
+  position: relative;
+}
+
+.rainbow-wrapper:after {
+  position: absolute;
+  height: 200%;
+  width: 200%;
+  top: 0;
+  left: 0;
+  content: "";
+  background: red;
+  rotate: 10deg;
+  display: block;
+  transform-origin: bottom right;
+} */
 
 
 
