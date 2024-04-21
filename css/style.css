@@ -235,6 +235,7 @@ section {
 
 .hero {
   padding: 0;
+  padding-top: 0;
   margin-bottom: 6em;
   text-align: center;
   display: grid;
