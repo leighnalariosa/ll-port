@@ -202,6 +202,9 @@ a.button:hover {
 }
 
 .site-navigation li {
+  font-family: "baskerville-urw", Helvetica, Arial, serif;
+  font-weight: 300;
+  font-style: italic;
   margin: 0 .5em;
   padding: 0;
   display: inline-block;
@@ -497,6 +500,9 @@ fade-in {
 }
 
 .expandable-cards h4 {
+  font-family: "baskerville-urw", Helvetica, Arial, serif;
+  font-style: italic;
+  font-weight: 300;
   font-size: 1.4em;
 }
 
