@@ -140,6 +140,16 @@ h3.subheader {
   font-weight: 400;
 }
 
+.hidden:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 /* .full-width {
   width: 100;
   position: relative;
@@ -158,7 +168,6 @@ img {
   max-width: 100%;
   height: auto;
 }
-
 
 
 img.circular {
@@ -490,10 +499,28 @@ fade-in {
   position: relative;
   height: 350px;
   transition: all .4s ease-out;
+  cursor: pointer;
+}
+
+.expandable-cards details:focus-within,
+.expandable-cards details:focus {
+  outline: 2px solid white;
 }
 
 .expandable-cards details[open] {
   flex: 3;
+}
+
+.expandable-cards details {
+  --thumb-text-opacity: 0;
+  --thumb-image-scale: 1;
+}
+
+.expandable-cards details:focus-within,
+.expandable-cards details:focus,
+.expandable-cards details:hover {
+  --thumb-text-opacity: 1;
+  --thumb-image-scale: 1.1;
 }
 
 .expandable-cards .thumb-image img {
@@ -505,12 +532,10 @@ fade-in {
   width: 100%;
   height: 100%;
   transition: all .4s ease-out;
+  scale: var(--thumb-image-scale);
 }
 
-.expandable-cards .thumb-image:hover img {
-  scale: 1.1;
-}
-
+.expandable-cards .thumb-button,
 .expandable-cards .thumb-text {
   position: absolute;
   display: flex;
@@ -523,6 +548,8 @@ fade-in {
   height: 100%;
   text-decoration: none;
   color: white;
+  opacity: var(--thumb-text-opacity);
+  transition: opacity .3s linear;
 }
 
 .expandable-cards h4 {
