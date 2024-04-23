@@ -311,7 +311,10 @@ section {
   /* height: auto; */
 }
 
+
+
 .container-parallax h1 {
+  font-size: 8em;
   font-family: "abril-display", serif;
   font-weight: 900;
   font-style: italic;
@@ -322,8 +325,26 @@ section {
   width: 100%;
   height: 50vh;
   margin: auto 0;
-  padding: 20% 0;
-  font-size: 13em;
+  padding: 100% 0;
+}
+
+@media (min-width:768px) {
+
+
+  .container-parallax h1 {
+    font-family: "abril-display", serif;
+    font-weight: 900;
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: inline-block;
+    width: 100%;
+    height: 50vh;
+    margin: auto 0;
+    padding: 20% 0;
+    font-size: 20em;
+  }
 }
 
 section.hero {
@@ -1060,6 +1081,8 @@ figcaption {
 .page-about h2 {
   padding-bottom: .5em;
   font-family: "baskerville-urw", Helvetica, Arial, serif;
+  font-weight: 600;
+  font-style: italic;
 }
 
 /* ANIMATIONS */
