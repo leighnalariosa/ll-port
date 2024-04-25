@@ -818,9 +818,9 @@ figcaption {
   }
 }
 
-/* .site-main {
-  background-color: #efefef;
-} */
+.site-main {
+  margin: 1.5em;
+}
 
 /* img {
   box-shadow: 0 0 10px 0 rgb(0 0 0 / .2);
