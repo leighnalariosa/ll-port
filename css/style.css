@@ -51,7 +51,7 @@ p {
 }
 
 h1 {
-  font-style: bold;
+  font-weight: bold;
   font-size: 4em;
   margin: 0;
   line-height: 1;
@@ -211,13 +211,13 @@ a.button:hover {
 .site-navigation ul {
   margin: 0;
   padding: 0;
-  font-size: 1.3em;
+  font-size: 1.5em;
 }
 
 .site-navigation li {
   font-family: "baskerville-urw", Helvetica, Arial, serif;
-  font-weight: 300;
-  font-style: italic;
+  font-weight: bold;
+  font-style: normal;
   margin: 0 .5em;
   padding: 0;
   display: inline-block;
@@ -232,7 +232,7 @@ a.button:hover {
 .site-navigation a:hover,
 .site-navigation a.selected {
   color: rgba(0, 0, 0, .6);
-  border-bottom: 0.05em solid rgba(0, 0, 0, .2);
+  border-bottom: 0.05em solid rgb(249, 116, 0);
 }
 
 @media (min-width: 768px) {
@@ -685,7 +685,8 @@ section,
     width: 46%;
   }
 
-  .row .one-third {
+  .row .one-third,
+  .row .col-3 {
     width: 29.3333%;
   }
 
