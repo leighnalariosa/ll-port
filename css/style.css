@@ -177,7 +177,7 @@ img.circular {
 /* BUTTONS */
 a.button {
   display: inline-block;
-  background-color: #a8a500;
+  background-color: #dd8800;
   color: rgba(255, 255, 255, 0.8);
   border-radius: .5em;
   padding: 1em 2em .8em 2em;
@@ -188,7 +188,7 @@ a.button {
 }
 
 a.button:hover {
-  background-color: rgb(15, 67, 0);
+  background-color: rgb(255, 107, 33);
 }
 
 /* SITE-STRUCTURE */
