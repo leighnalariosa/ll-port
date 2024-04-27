@@ -1119,6 +1119,13 @@ figcaption {
   font-style: italic;
 }
 
+h2.caps {
+  font-family: "futura-pt", Helvetica, Arial, sans-serif;
+  font-size: 1.75em;
+  font-style: normal;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
 
 
 /* ANIMATIONS */
