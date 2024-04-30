@@ -193,8 +193,7 @@ a.button:hover {
 
 /* SITE-STRUCTURE */
 
-.site-header,
-.site-footer {
+.site-header {
   font-family: "baskerville-urw", Helvetica, Arial, serif;
   text-align: center;
   padding: 2em var(--site-margin) 2em var(--site-margin);
@@ -706,7 +705,6 @@ section,
     width: 12.6666%;
   }
 
-
   .row .col-4 {
     width: 29.333%;
   }
@@ -1179,6 +1177,47 @@ h2.caps {
   --ringoffset: 76;
   stroke: #576d00;
 }
+
+
+/*  FOOTER  */
+.site-footer {
+  background-color: rgb(216, 66, 36);
+  color: white;
+  font-family: "baskerville-urw", Helvetica, Arial, serif;
+}
+
+@media (min-width: 768px) {
+  .site-footer {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 20px;
+    padding: 0 calc(1.5em + .5%);
+    grid-template-areas: "home home home work work work work work quote quote quote quote";
+  }
+
+  .site-footer .home {
+    grid-area: home;
+    border: 1px solid yellow;
+  }
+
+  .site-footer .work {
+    grid-area: work;
+    border: 1px solid yellow;
+
+  }
+
+  .site-footer .quote {
+    grid-area: quote;
+    border: 1px solid yellow;
+  }
+
+
+}
+
+
+
+
+
 
 /* .rainbow-wrapper img {
   display: block;
