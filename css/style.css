@@ -177,7 +177,7 @@ img.circular {
 /* BUTTONS */
 a.button {
   display: inline-block;
-  background-color: #dd8800;
+  background-color: rgb(216, 66, 36);
   color: rgba(255, 255, 255, 0.8);
   border-radius: .5em;
   padding: 1em 2em .8em 2em;
@@ -232,6 +232,10 @@ a.button:hover {
 .site-navigation a.selected {
   color: rgba(0, 0, 0, .6);
   border-bottom: 0.05em solid rgb(249, 116, 0);
+}
+
+.top {
+  text-align: center;
 }
 
 @media (min-width: 768px) {
@@ -324,8 +328,6 @@ section {
   /* height: auto; */
 }
 
-
-
 .container-parallax h1 {
   font-size: 8em;
   font-family: "abril-display", serif;
@@ -368,12 +370,6 @@ section.hero {
   transition-property: background-position;
   /* height: auto; */
 }
-
-/* .container-parallax {
-  padding-top: 16%;
-
-} */
-
 
 /* #THUMBGRID */
 .thumbgrid {
@@ -576,11 +572,8 @@ video {
 }
 
 .video-iframe {
-  /* position: relative; */
   overflow: hidden;
   width: 100%;
-  /* padding-top: 56.25%; */
-  /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
 }
 
 .video-iframe.ratio-2-1 {
@@ -597,26 +590,6 @@ video {
   width: 100%;
   height: 100%;
 }
-
-/* FLEX GRID */
-
-/* @media (min-width: 768px) {
-
-  .row {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 1em;
-  }
-
-  .one-third.column {
-    width: 32%;
-  }
-
-  .two-thirds.column {
-    width: 60%;
-  }
-
-} */
 
 /* SEMANTIC GRID */
 section,
@@ -1125,7 +1098,6 @@ h2.caps {
   letter-spacing: 2px;
 }
 
-
 /* ANIMATIONS */
 
 [data-scroll="leftslide"] {
@@ -1209,13 +1181,13 @@ h2.caps {
 }
 
 .site-footer .homenav {
-  font-size: 1.5em;
+  font-size: 1.4em;
   margin: 0;
   padding: 0;
 }
 
 .site-footer .worknav {
-  font-size: 1.5em;
+  font-size: 1.4em;
   margin: 0;
   padding: 0;
   columns: 2;
@@ -1253,8 +1225,7 @@ blockquote.hang {
 }
 
 .quote {
-  /* padding: 0 3em 3em 3em; */
-  font-size: 1.5em;
+  font-size: 1.3em;
 }
 
 .site-footer {
@@ -1300,7 +1271,6 @@ blockquote.hang {
 
   .site-footer .home>* {
     width: fit-content;
-
   }
 
   .site-footer .work {
@@ -1328,10 +1298,10 @@ blockquote.hang {
 .eyebrow {
   font-family: "futura-pt", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
-  font-size: .5em;
-  margin-top: 4em;
+  font-size: .8em;
+  margin-top: 2.5em;
   margin-bottom: 1em;
-  letter-spacing: .4em;
+  letter-spacing: .3em;
 }
 
 /* .rainbow-wrapper img {
