@@ -73,6 +73,16 @@ h3 {
   line-height: 1.2;
 }
 
+@media (max-width: 767px) {
+  h1 {
+    font-size: 3em;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+}
+
 p {
   font-size: 1.4em;
   margin-top: .3em;
@@ -563,6 +573,17 @@ fade-in {
 
 .expandable-cards .featured {
   flex: 2;
+}
+
+@media (max-width: 767px) {
+  .expandable-cards {
+    flex-wrap: wrap;
+  }
+
+  .expandable-cards details {
+    min-width: 40%;
+    margin: 1vw;
+  }
 }
 
 /* VIDEO */
